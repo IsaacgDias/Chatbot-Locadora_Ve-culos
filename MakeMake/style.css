@@ -1,0 +1,185 @@
+header{
+    margin: 0 auto;
+    padding-top: 2%;
+}
+
+nav{
+    float: left;
+}
+
+ul > li{
+    float: left;
+    margin-left: 30px;
+    padding: 15px;
+    font-size: 13pt;
+    color: rgb(72, 143, 113);
+}
+
+.active_li{
+    background-image: linear-gradient(to bottom, rgba(0, 0 ,0 ,0),  rgba(72, 143, 113, 0.1), rgba(72, 143, 113, 0.1), rgba(72, 143, 113, 0.2), rgba(72, 143, 113, 0.3) );
+}
+
+#div_login{
+    float: right;
+    margin-right: 3%;
+}
+
+#div_login > button{
+    border: none;
+    width: 100px;
+    height: 50px;
+    background-color: rgb(72, 143, 113);
+    font-size: 13pt;
+    border-radius: 5px;
+    color: #fff;
+}
+
+#div_login > a{
+    text-decoration: underline;
+    color: #488f71;
+    margin-left: 25px;
+    outline: none;
+}
+
+#make{
+    font-size: 41pt;
+    color: rgb(72, 143, 113);
+    margin: 0 auto;
+    margin-left: 33%;
+    margin-top: 5%;
+}
+
+.input{
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    padding-left: 10%;
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+
+#inp-p{
+    height: 50px;
+    outline: none;
+}
+
+#inp-p::placeholder{
+    font-size: 15pt;
+}
+
+#search{
+    width: 8%;
+    background-image: url(img/lupa.png);
+    background-repeat: no-repeat;
+    background-size: 80% 80%;
+    background-position: center;
+    background-color: white;
+    border: 1px solid #939393;
+    border-radius: 5px;
+}
+
+body{
+    margin: 0 auto;
+    align-items: center;
+}
+
+#principal_car{
+    margin: 0 auto;
+
+}
+
+.card{
+    float: left;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+
+.cards_car{
+    margin: 0 auto;
+    margin-bottom: 5%;
+}
+
+.cards_car > h5{
+    text-align:left;
+    margin-left: 5%;
+}
+
+#comprar{
+    clear: both;
+}
+
+#alugar{
+    margin-top: 5%;
+}
+
+.card-img-top{
+    height: 200px;
+}
+
+.btn-car{
+    background-color: #488f71;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    width: 90px;
+    height: 40px;
+    color: #fff;
+    font-size: 13pt;
+}
+
+/*---------------------------------------------------------------------------------------------------------------------*/
+
+
+@media only screen and (min-width: 1230px) {
+
+    #make{
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    [class*="col-10"] {
+        width: 100vw;
+    }
+}
+
+@media only screen and (max-width: 1220px) {
+
+    .cards_car{
+        margin-left: 21%;
+    }
+  }
+
+@media only screen and (max-width: 1055px) {
+
+    .cards_car{
+        margin: 0 auto;
+    }
+  }
+
+
+@media only screen and (max-width: 768px) {
+
+    [class*="col-"] {
+      width: 100%;
+    }
+
+    #principal_car{
+        display: none;
+    }
+
+    .cards_car{
+        margin-left: 30%;
+    }
+
+    #inp-p{
+        width: 80%;
+    }
+
+    #search{
+        width: 11%;
+    }
+
+  } 
